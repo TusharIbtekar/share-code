@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/base.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  {% block style %} {% endblock %}
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <div class="nav-bar">
+    <div class="main__icon">
+      <p>Share Code</p>
+    </div>
+    <div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success" type="submit"></button> -->
+        <img class="icon" src="/static/blog/images/search-icon-monstr.svg" alt="" type="submit">
+      </form>
+    </div>
+    <div>
+      <img class="icon" src="/static/blog/images/friends.svg" alt="">
+    </div>
+
+  </div>
+
+  {% block content %} {% endblock %}
+</body>
+</html>
