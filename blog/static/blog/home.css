@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-.ok{
-  color: blue;
+.content-section{
+  padding-top: 20px;
+}
+.media-body{
+  display: block;
+  /* border: 1px solid black; */
+  box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 10%);
+  padding: 10px;
+}
+.article-metadata{
+  border-bottom: 1px solid black;
+}
+.text-muted{
+  padding-left: 5px;
+  font-size: 10px;
 }

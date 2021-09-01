@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title></title>
-</head>
-<body>
+{% extends "blog/base.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/home.css' %}">
+{% endblock style %}
+
+{% block content %}
   <h1>About page!</h1>
-</body>
-</html>
+{% endblock content %}
