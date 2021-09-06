@@ -6,6 +6,12 @@
 .content-section{
   padding-top: 20px;
 }
+.profile__image-icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
 .media-body{
   display: block;
   /* border: 1px solid black; */
