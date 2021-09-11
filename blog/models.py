@@ -2,10 +2,12 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django_summernote.fields import SummernoteTextFormField, SummernoteTextField
 
 class Post(models.Model):
   title = models.CharField(max_length=100)
-  content = models.TextField()
+  #content = models.TextField()
+  content = SummernoteTextField()
   date_posted = models.DateTimeField(default=timezone.now)
   author = models.ForeignKey(User, on_delete=models.CASCADE)
 

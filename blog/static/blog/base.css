@@ -17,6 +17,10 @@
   margin-bottom: 0px;
 }
 
+.main-logo{
+  height: 70px;
+}
+
 .icon{
   height: 50px;
   width: 50px;
@@ -29,4 +33,22 @@
 
 .login{
   margin-right: 10%;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  
+}
+
+a:active {
+  text-decoration: underline;
 }
